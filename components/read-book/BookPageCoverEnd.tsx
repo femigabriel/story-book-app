@@ -1,5 +1,6 @@
 import React from "react";
 import { ReadBookHeader } from "./ReadBookHeader";
+import Image from "next/image";
 
 interface Props {
   onNextClick: () => any;
@@ -10,14 +11,18 @@ export const BookPageCoverEnd = ({ onNextClick, onBackClick }: Props) => {
     <div className="coverBook">
       <ReadBookHeader />
       <div className="flex justify-between items-center coverBook w-full h-screen px-5">
-        <img
+        <Image
+          width={17}
+          height={19}
           src="./assets/icons/forwardIcon.svg"
           className="w-[17px] h-[19px] cursor-pointer cover"
           alt="forward-icon"
           onClick={onBackClick}
         />
         <div className="flex w-full items-center">
-          <img
+          <Image
+            width={17}
+            height={19}
             src="./assets/images/backCover.svg"
             className="w-[680px] px-10 h-[538.355px] cursor-pointer "
             alt="cover"
@@ -30,7 +35,9 @@ export const BookPageCoverEnd = ({ onNextClick, onBackClick }: Props) => {
           </button>
         </div>
 
-        <img
+        <Image
+          width={17}
+          height={19}
           src="./assets/icons/backIcon.svg"
           className="w-[17px] h-[19px] cursor-pointer cover"
           alt="forward-icon"
