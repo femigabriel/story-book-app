@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Button, Drawer } from "antd";
 import Link from "next/link";
+import Image from "next/image"
+
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -16,13 +18,17 @@ export const Header = () => {
   return (
     <div>
       <header className="px-5 py- flex justify-between h-[96px] header">
-        <img
+        <Image
           src="./assets/icons/logo.svg"
+          width={131}
+          height={101}
           className="w-[131px] h-[101px] cursor-pointer logo"
           alt="logo"
         />
-        <img
+        <Image
           src="./assets/icons/menuIcon.svg"
+          width={57}
+          height={85}
           onClick={showDrawer}
           className="w-[57px] h-[85px] cursor-pointer menuIcon"
           alt="menu"

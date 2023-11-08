@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "../Header";
+import Image from "next/image";
 
 export const LandingPage = () => {
   return (
@@ -16,17 +17,23 @@ export const LandingPage = () => {
           </p>
         </div>
         <div className="flex gap-5 mt-10 lists">
-          <img
+          <Image
+            width={18}
+            height={20}
             src="./assets/images/Frame3.svg"
             className="w-[225px] h-[168px] cursor-pointer"
             alt="card"
           />
-          <img
+          <Image
+            width={18}
+            height={20}
             src="./assets/images/Frame1.svg"
             className="w-[225px] h-[168px] cursor-pointer"
             alt="card"
           />
-          <img
+          <Image
+            width={18}
+            height={20}
             src="./assets/images/Frame2.svg"
             className="w-[225px] h-[168px] cursor-pointer"
             alt="card"

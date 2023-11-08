@@ -1,5 +1,6 @@
 import React from "react";
 import { ActivitiesHeader } from "./ActivitiesHeader";
+import Image from "next/image"
 
 export const ActivitiesCard = () => {
   return (
@@ -16,7 +17,9 @@ export const ActivitiesCard = () => {
                   CHARLIE’S CHOICES
                 </h1>
                 <button className="bg-[#9B59B6] relative top-24 w-[202px]  h-[47px] text-[#F8F8F8] text-[0.85em] justify-center items-center rounded-[24px] flex my-5">
-                  <img
+                <Image
+                 width={18}
+                 height={20}
                     className="mr-2 w-[18px] h-[20px]"
                     src="./assets/icons/playIcon.svg"
                     alt="playIcon"
@@ -34,7 +37,9 @@ export const ActivitiesCard = () => {
                   BUS STOPS
                 </h1>
                 <button className="bg-[#9B59B6] relative top-28 w-[202px]  h-[47px] text-[#F8F8F8] text-[0.85em] justify-center items-center rounded-[24px] flex my-5">
-                  <img
+                <Image
+                 width={18}
+                 height={20}
                     className="mr-2 w-[18px] h-[20px]"
                     src="./assets/icons/playIcon.svg"
                     alt="playIcon"
@@ -52,7 +57,9 @@ export const ActivitiesCard = () => {
                   POWER OF WORDS
                 </h1>
                 <button className="bg-[#9B59B6] relative top-24 w-[202px]  h-[47px] text-[#F8F8F8] text-[0.85em] justify-center items-center rounded-[24px] flex my-5">
-                  <img
+                <Image
+                 width={18}
+                 height={20}
                     className="mr-2 w-[18px] h-[20px]"
                     src="./assets/icons/playIcon.svg"
                     alt="playIcon"
@@ -70,7 +77,9 @@ export const ActivitiesCard = () => {
                   STOP LIGHT
                 </h1>
                 <button className="bg-[#9B59B6] relative top-28 w-[202px]  h-[47px] text-[#F8F8F8] text-[0.85em] justify-center items-center rounded-[24px] flex my-5">
-                  <img
+                <Image
+                 width={18}
+                 height={20}
                     className="mr-2 w-[18px] h-[20px]"
                     src="./assets/icons/playIcon.svg"
                     alt="playIcon"

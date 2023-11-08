@@ -1,5 +1,7 @@
 import React from "react";
 import { MessageForm } from "./MessageForm";
+import Image from "next/image";
+
 const features = [
   {
     id: 1,
@@ -60,14 +62,18 @@ export const Feautures = () => {
                 book that mimic the feel of a physical book.
               </p>
             </div>
-            <img
+            <Image
+              width={18}
+              height={20}
               src="./assets/images/features1.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-1"
             />
           </div>
           <div className="flex justify- gap-[80px] my-10 w-full">
-            <img
+            <Image
+              width={18}
+              height={20}
               src="./assets/images/features2.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-2"
@@ -89,14 +95,18 @@ export const Feautures = () => {
                 to purchase on Amazon, readily available for your convenience.
               </p>
             </div>
-            <img
+            <Image
+              width={18}
+              height={20}
               src="./assets/images/features3.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-3"
             />
           </div>
           <div className="flex justify- gap-[80px] my-10 w-full">
-            <img
+            <Image
+              width={18}
+              height={20}
               src="./assets/images/features4.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-4"

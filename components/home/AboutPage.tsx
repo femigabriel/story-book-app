@@ -1,11 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
 export const AboutPage = () => {
   return (
     <div className="bg-[#F8F8F8] px-10 py-10 pt-20">
       <div className="flex justify-between">
         <span className="text-[0.850em]">About</span>
-        <img
+        <Image
+          width={64}
+          height={59}
           src="./assets/icons/scrollUp.svg"
           className=" cursor-pointer w-[64px] h-[59px]"
           alt="scroll-up"
@@ -32,7 +35,9 @@ export const AboutPage = () => {
             Buy Now
           </button>
         </div>
-        <img
+        <Image
+          width={365}
+          height={351}
           src="./assets/images/charlieImg.svg"
           className=" cursor-pointer w-[365px] h-[351.46px]"
           alt="scroll-up"

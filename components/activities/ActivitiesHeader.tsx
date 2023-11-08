@@ -3,6 +3,8 @@ import { DownOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Button, Dropdown } from "antd";
 import Link from "next/link";
+import Image from "next/image"
+
 
 const items: MenuProps["items"] = [
   {
@@ -41,7 +43,9 @@ export const ActivitiesHeader = () => {
       <header className="px-10 py-7 flex justify-between  w-full">
         <Link href="/" className="flex cursor-pointer w-full">
           
-            <img
+            <Image
+                 width={24}
+                 height={24}
               src="./assets/icons/back.svg"
               className="w-[24px] h-[24px] mr-3"
               alt="back-icon"
@@ -52,7 +56,9 @@ export const ActivitiesHeader = () => {
 
         <div className="flex">
           <div className="flex cursor-pointer h-[] w-[198px]">
-            <img
+            <Image
+                 width={58}
+                 height={58}
               src="./assets/icons/avatarIcon.svg"
               className="w-[58px] h-[58px] cursor-pointer"
               alt="avatar"
@@ -67,7 +73,9 @@ export const ActivitiesHeader = () => {
             alt="down-icon"
           /> */}
           <Dropdown menu={{ items }} placement="bottomRight" arrow>
-            <img
+            <Image
+                 width={40}
+                 height={40}
               src="./assets/icons/downIcon.svg"
               className="w-[40px] h-[40px] mt-3 cursor-pointer"
               alt="down-icon"
